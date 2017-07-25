@@ -1,0 +1,186 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.header {
+  align-items: center;
+  background-color: #2E5CE6;
+  display: flex;
+  height: 56px;
+  justify-content: space-between;
+  padding-left: 24px;
+  padding-right: 8px;
+  position: relative;
+}
+
+.nav {
+  font-size: 16px;
+}
+
+.nav__item {
+  color: #fff;
+  display: inline-block;
+  margin-right: 24px;
+  text-decoration: none;
+}
+
+.nav__item--active {
+  border-bottom: 2px solid #123AB3;
+}
+
+.logo {
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  width: 122px;
+}
+
+.button {
+  background: #fff;
+  border-radius: 8px;
+  border: 0;
+  color: #2E5CE6;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 16px;
+  text-decoration: none;
+}
+
+.hero {
+  align-items: center;
+  background-color: #123AB3;
+  color: #fff;
+  display: flex;
+  height: 400px;
+  text-align: center;
+  justify-content: center;
+}
+
+.hero__section {
+  width: 560px;
+}
+
+.featured-article__title {
+  font-family: 'Dosis', Arial, sans-serif;
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 25px;
+}
+
+.featured-article__content {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 32px;
+}
+
+.featured-article__button {
+  background: transparent;
+  font-weight: 400;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+.about {
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  border: 1px solid #eee;
+  padding: 40px;
+  display: flex;
+}
+
+.about__title {
+  font-family: 'Dosis', Arial, sans-serif;
+  font-size: 24px;
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+
+.about__content {
+  line-height: 24px;
+}
+
+.about__image {
+  border-radius: 72px;
+  margin-left: 40px;
+  width: 144px;
+}
+
+.main {
+  width: 720px;
+  margin: auto;
+}
+
+.article {
+  margin-bottom: 40px;
+}
+
+.article__title {
+  font-family: 'Dosis', Arial, sans-serif;
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 24px;
+  margin-top: 40px;
+}
+
+.article__content {
+  margin-bottom: 24px;
+  line-height: 24px;
+}
+
+.article__button {
+  color: #2E5CE6;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.article__button:after {
+  content: '→';
+  font-family: sans-serif;
+  left: 4px;
+  position: relative;
+  top: 1px;
+}
+
+.article__pill {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.footer {
+  align-items: center;
+  background-color: #2E5CE6;
+  color: #fff;
+  display: flex;
+  font-size: 12px;
+  height: 54px;
+  justify-content: space-between;
+  padding: 0 24px;
+}
+
+.footer__link {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.footer__backtotop {
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  width: 16px;
+}
