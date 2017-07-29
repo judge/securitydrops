@@ -17,24 +17,25 @@ body {
   display: flex;
   height: 56px;
   justify-content: space-between;
-  padding-left: 24px;
-  padding-right: 8px;
+  padding: 2px 8px 0 24px;
   position: relative;
 }
 
 .nav {
   font-size: 16px;
+  position: relative;
 }
 
 .nav__item {
   color: #fff;
   display: inline-block;
   margin-right: 24px;
+  padding-bottom: 4px;
   text-decoration: none;
 }
 
 .nav__item--active {
-  border-bottom: 2px solid #123AB3;
+  border-bottom: 4px solid #123AB3;
 }
 
 .logo {
@@ -45,11 +46,62 @@ body {
   width: 122px;
 }
 
+.logo svg {
+  position: relative;
+  top: 1px;
+}
+
+.meta {
+  align-items: center;
+  display: flex;
+}
+
+.search {
+  position: relative;
+  margin-right: 10px;
+}
+
+.search__icon {
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  pointer-events: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.search__input {
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  height: 40px;
+  width: 36px;
+  transition: width .3s;
+  -webkit-appearance: textfield;
+}
+
+.search__input:focus {
+  color: #fff;
+  cursor: text;
+  font-size: 16px;
+  padding: 0 10px 0 40px;
+  background-color: #123AB3;
+  outline: none;
+  width: 240px;
+}
+
+.search__input:focus ~ .search__icon {
+  right: auto;
+  left: 10px;
+}
+
 .button {
   background: #fff;
   border-radius: 8px;
   border: 0;
   color: #2E5CE6;
+  cursor: pointer;
   display: inline-block;
   font-size: 16px;
   font-weight: bold;
@@ -57,6 +109,10 @@ body {
   line-height: 40px;
   padding: 0 16px;
   text-decoration: none;
+}
+
+.button:focus {
+  outline: none;
 }
 
 .hero {
@@ -70,7 +126,8 @@ body {
 }
 
 .hero__section {
-  width: 560px;
+  width: 600px;
+  padding: 0 20px;
 }
 
 .featured-article__title {
@@ -120,8 +177,9 @@ body {
 }
 
 .main {
-  width: 720px;
+  max-width: 760px;
   margin: auto;
+  padding: 0 20px;
 }
 
 .article {
