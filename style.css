@@ -218,6 +218,39 @@ body {
   text-align: center;
 }
 
+.modal {
+  align-items: center;
+  bottom: 0;
+  display: none;
+  justify-content: center;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.modal--opened {
+  display: flex;
+}
+
+.modal__overlay {
+  background: rgba(0, 0, 0, .7);
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
+}
+
+.modal__content {
+  background: #fff;
+  overflow: auto;
+  padding: 40px;
+  position: relative;
+  z-index: 2;
+}
+
 .footer {
   align-items: center;
   background-color: #2E5CE6;

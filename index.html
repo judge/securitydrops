@@ -24,7 +24,7 @@
         <input type="search" class="search__input">
         <svg class="search__icon" width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"><path d="M12.5 11l-.733-.697C12.544 9.23 13 7.916 13 6.5 13 2.91 10.09 0 6.5 0S0 2.91 0 6.5 2.91 13 6.5 13c1.61 0 3.782-1.218 3.782-1.218L11 12.5l5 4.99L17.49 16l-4.99-5zm-6 0C4.01 11 2 8.99 2 6.5S4.01 2 6.5 2 11 4.01 11 6.5 8.99 11 6.5 11z" fill="#FFF" fill-rule="evenodd"/></svg>
       </div>
-      <button class="button">Newsletter</button>
+      <button class="button modalhandler" data-modal="newsletter">Newsletter</button>
     </div>
   </header>
   <div class="hero">
@@ -65,7 +65,7 @@
       </section>
     </div>
     <article class="article">
-      <h1 class="article__title">Open your browser</h1>
+      <h1 class="article__title">Defense in Depth a.k.a the Castle Approach</h1>
       <p class="article__content">Today we live the era of the web and your browser is an integral part of it. As a developer, it is essential to know how stuff works to some degree, and understand how you might affect this behavior to increase security. This post is an intro to that topic!</p>
       <a class="article__button" href="#">Read Article</a>
       <div class="article__pill">
@@ -82,5 +82,16 @@
     </a>
     <div>Published with <a href="#" class="footer__link">Ghost</a></div>
   </footer>
+  <div class="modal" id="newsletter">
+    <div class="modal__content">
+      <h5>Sign up for newsletter</h5>
+      <p>Get the latest Security Drops delivered in your mailbox. No price tag, no spam, no kidding.</p>
+      <input type="text" placeholder="Enter your e-mail here">
+      <button>Subscribe</button>
+      <button>No Thanks</button>
+    </div>
+    <div class="modal__overlay"></div>
+  </div>
+  <script src="app.js"></script>
 </body>
 </html>
