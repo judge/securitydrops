@@ -61,23 +61,13 @@ body {
   margin-right: 10px;
 }
 
-.search__icon {
-  bottom: 0;
-  left: 0;
-  margin: auto;
-  pointer-events: none;
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-
 .search__input {
   background: transparent;
   border: 0;
   cursor: pointer;
   height: 40px;
   width: 36px;
-  transition: width .3s;
+  transition: all .3s;
   -webkit-appearance: textfield;
 }
 
@@ -91,9 +81,20 @@ body {
   width: 240px;
 }
 
+.search__icon {
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  pointer-events: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: translateX(0);
+  transition: transform .3s;
+}
+
 .search__input:focus ~ .search__icon {
-  right: auto;
-  left: 10px;
+  transform: translateX(-100px);
 }
 
 .button {
