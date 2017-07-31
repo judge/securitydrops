@@ -121,6 +121,11 @@ h5 {
   text-decoration: none;
 }
 
+.button--inverse {
+  background-color: #2E5CE6;
+  color: #fff;
+}
+
 .button:focus {
   outline: none;
 }
@@ -281,3 +286,25 @@ h5 {
   right: 0;
   width: 16px;
 }
+
+.signup__title {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.signup__content {
+  line-height: 24px;
+}
+
+.signup__input {
+  background: #fff;
+  border: 1px solid #ddd;
+  color: #666;
+  display: block;
+  font-size: 16px;
+  height: 48px;
+  margin: 24px 0;
+  padding: 0 10px;
+  width: 100%;
+}
+
