@@ -30,11 +30,6 @@ var Modal = (function() {
     _bindModalEvents(modal);
   }
 
-  var _close = function(event) {
-    var modalElement = event.target.parentNode;
-    _closeModal(modalElement);
-  }
-
   var _openModal = function(element) {
     element.classList.add('modal--opened')
   }
@@ -45,7 +40,9 @@ var Modal = (function() {
 
   var _bindModalEvents = function(element) {
     var overlayElement = element.querySelector('.modal__overlay');
-    overlayElement.addEventListener('click', _close);
+    overlayElement.addEventListener('click', function() { _closeModal(element); });
+    var closeElements = element.querySelector('.modal__close');
+    closeElements.addEventListener('click', function() { _closeModal(element); });
   }
 
   var _getModalIDFromElement = function(element) {
