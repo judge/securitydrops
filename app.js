@@ -1,7 +1,7 @@
 window.addEventListener('load', function load(event){
   window.removeEventListener('load', load, false);
   Modal.init();
-},false);
+}, false);
 
 var Modal = (function() {
   var init = function() {
