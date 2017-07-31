@@ -136,13 +136,38 @@ h5 {
   color: #fff;
   display: flex;
   height: 400px;
+  justify-content: space-between;
+  position: relative;
   text-align: center;
-  justify-content: center;
+}
+
+.hero__next,
+.hero__prev {
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  padding: 26px;
 }
 
 .hero__section {
-  width: 600px;
+  align-items: center;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  left: 0;
+  margin: auto;
   padding: 0 20px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  max-width: 600px;
+}
+
+.hero__section:not(.hero__section--active) {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 1s;
 }
 
 .featured-article__title {
@@ -168,8 +193,9 @@ h5 {
   background-color: #f8f8f8;
   border-radius: 8px;
   border: 1px solid #eee;
-  padding: 40px;
   display: flex;
+  margin-bottom: 40px;
+  padding: 40px;
 }
 
 .about__title {
