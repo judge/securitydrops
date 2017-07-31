@@ -28,30 +28,30 @@ var Modal = (function() {
 
     _openModal(modal);
     _bindModalEvents(modal);
-  }
+  };
 
   var _openModal = function(element) {
     element.classList.add('modal--opened')
-  }
+  };
 
   var _closeModal = function(element) {
     element.classList.remove('modal--opened')
-  }
+  };
 
   var _bindModalEvents = function(element) {
     var overlayElement = element.querySelector('.modal__overlay');
     overlayElement.addEventListener('click', function() { _closeModal(element); });
     var closeElements = element.querySelector('.modal__close');
     closeElements.addEventListener('click', function() { _closeModal(element); });
-  }
+  };
 
   var _getModalIDFromElement = function(element) {
     return element.getAttribute('data-modal');
-  }
+  };
 
   var _searchModalByID = function(id) {
     return document.querySelector('#' + id);
-  }
+  };
 
   return {
     init: init
